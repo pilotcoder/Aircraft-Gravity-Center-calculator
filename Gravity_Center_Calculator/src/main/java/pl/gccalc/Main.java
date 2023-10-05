@@ -15,6 +15,15 @@ public class Main {
         aircraft.setALenght(scanner.nextDouble());
 
         System.out.println("enter front weight");
+        aircraft.setFrontWeight(scanner.nextDouble());
+
+        System.out.println("enter rear weight");
+        aircraft.setRearWeihgt(scanner.nextDouble());
+
+        Double result =  (((aircraft.getLLenght() * aircraft.getRearWeihgt())/(aircraft.getFrontWeight()+ aircraft.getRearWeihgt()))- aircraft.getALenght());
+
+        System.out.println(result);
+
 
 
 
