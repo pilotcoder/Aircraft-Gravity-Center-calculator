@@ -12,6 +12,7 @@ private Double frontWeight;
 private Double rearWeihgt;
 private Double aLenght ;
 private Double lLenght ;
+private String weighingMethod ;
 private Double gravityCentre ;
 
 }
