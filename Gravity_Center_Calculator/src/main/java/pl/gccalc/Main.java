@@ -10,15 +10,15 @@ public class Main {
         System.out.println("Hello in calculator please enter correct values:");
 
 
-//        Scanner scanner = new Scanner(System.in);
-        BufferedReader odczyt = new BufferedReader(new InputStreamReader(System.in));
+        Scanner scanner = new Scanner(System.in);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         while(aircraft.getLLenght() == null)
         {
             try{
                 System.out.println("enter l lenght:");
 //                aircraft.setLLenght(scanner.nextDouble());
-                aircraft.setLLenght(Double.parseDouble(odczyt.readLine()));
+                aircraft.setLLenght(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
                 System.out.println("wrong!!!");;
             }
@@ -28,13 +28,13 @@ public class Main {
 
 
         System.out.println("enter a lenght");
-//        aircraft.setALenght(scanner.nextDouble());
+        aircraft.setALenght(scanner.nextDouble());
 
         System.out.println("enter front weight");
-//        aircraft.setFrontWeight(scanner.nextDouble());
+        aircraft.setFrontWeight(scanner.nextDouble());
 
         System.out.println("enter rear weight");
-//        aircraft.setRearWeihgt(scanner.nextDouble());
+        aircraft.setRearWeihgt(scanner.nextDouble());
 
         Double result =  (((aircraft.getLLenght() * aircraft.getRearWeihgt())/(aircraft.getFrontWeight()+ aircraft.getRearWeihgt()))- aircraft.getALenght());
 
