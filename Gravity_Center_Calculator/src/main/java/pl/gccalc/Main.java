@@ -53,12 +53,31 @@ public class Main {
                 System.out.println("wrong data!!! Please enter only numbers for example: 123,45");;
             }
         }
+        while(aircraft.getWeighingMethod().equalsIgnoreCase("a")  && aircraft.getWeighingMethod().equalsIgnoreCase("b"))
+        {
+            try{
+                System.out.println("enter weghing method A (front wheel and tail) or B (main wheel and tail) ");
+                aircraft.setWeighingMethod(bufferedReader.readLine());
+            } catch (Exception e) {
+                System.out.println("wrong data!!! Please enter only letter A or B");
+            }
+        }
+
+        if ("a".equalsIgnoreCase(aircraft.getWeighingMethod())){
+            aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))+ aircraft.getALength()));
+
+        } else if ("b".equalsIgnoreCase(aircraft.getWeighingMethod())) {
+            aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))- aircraft.getALength()));
+
+        }
+        ;
 
 
 
-        Double result =  (((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))+ aircraft.getALength());
 
-        System.out.println(result);
+
+
+        System.out.println(aircraft.toString());
 
 
 
