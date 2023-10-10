@@ -9,10 +9,12 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Aircraft {
 private Double frontWeight;
-private Double rearWeihgt;
-private Double aLenght ;
-private Double lLenght ;
+private Double rearWeight;
+private Double aLength;
+private Double lLength ;
 private String weighingMethod ;
 private Double gravityCentre ;
+
+
 
 }
