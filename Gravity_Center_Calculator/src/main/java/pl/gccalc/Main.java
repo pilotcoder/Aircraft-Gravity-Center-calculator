@@ -53,10 +53,17 @@ public class Main {
                 System.out.println("wrong data!!! Please enter only numbers for example: 123,45");;
             }
         }
-        while(aircraft.getWeighingMethod().equalsIgnoreCase("a")  && aircraft.getWeighingMethod().equalsIgnoreCase("b"))
+        System.out.println("enter weghing method A (front wheel and tail) or B (main wheel and tail) ");
+
+        try{
+            aircraft.setWeighingMethod(bufferedReader.readLine());
+        } catch (Exception e) {
+            System.out.println("wrong data!!! Please enter only letter A or B");
+        }
+        while(!aircraft.getWeighingMethod().equalsIgnoreCase("a")  && !aircraft.getWeighingMethod().equalsIgnoreCase("b"))
         {
             try{
-                System.out.println("enter weghing method A (front wheel and tail) or B (main wheel and tail) ");
+                System.out.println("Please enter only A or B");
                 aircraft.setWeighingMethod(bufferedReader.readLine());
             } catch (Exception e) {
                 System.out.println("wrong data!!! Please enter only letter A or B");
