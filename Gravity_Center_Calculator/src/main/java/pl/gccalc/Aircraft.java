@@ -15,6 +15,15 @@ private Double lLength ;
 private String weighingMethod ;
 private Double gravityCentre ;
 
-
-
+    @Override
+    public String toString() {
+        return "Aircraft{" +
+                "frontWeight=" + frontWeight +
+                ", rearWeight=" + rearWeight +
+                ", aLength=" + aLength +
+                ", lLength=" + lLength +
+                ", weighingMethod='" + weighingMethod + '\'' +
+                ", gravityCentre=" + gravityCentre +
+                '}';
+    }
 }
