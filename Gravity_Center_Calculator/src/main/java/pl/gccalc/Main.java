@@ -8,7 +8,10 @@ public class Main {
     static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     static Aircraft aircraft = new Aircraft();
     public static void main(String[] args) {
-        System.out.println("Hello in calculator please enter correct values:");
+        System.out.print(ConsoleColors.BLUE);
+        System.out.println("Welcome in calculator please enter correct values:" );
+        System.out.print(ConsoleColors.RESET);
+
 
 
         Scanner scanner = new Scanner(System.in);
