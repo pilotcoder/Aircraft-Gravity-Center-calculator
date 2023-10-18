@@ -24,7 +24,7 @@ public class Main {
                 aircraft.setLLength(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
                 System.out.print(ConsoleColors.RED);
-                System.out.println("wrong data!!! Please enter only numbers for example: 123,45");
+                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
                 System.out.print(ConsoleColors.RESET);
             }
         }
@@ -35,7 +35,9 @@ public class Main {
                 System.out.println("enter a lenght");
                 aircraft.setALength(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.println("wrong data!!! Please enter only numbers for example: 123,45");;
+                System.out.print(ConsoleColors.RED);
+                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+                System.out.print(ConsoleColors.RESET);
             }
         }
 
@@ -45,7 +47,9 @@ public class Main {
                 System.out.println("enter front weight");
                 aircraft.setFrontWeight(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.println("wrong data!!! Please enter only numbers for example: 123,45");;
+                System.out.print(ConsoleColors.RED);
+                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+                System.out.print(ConsoleColors.RESET);
             }
         }
 
@@ -55,7 +59,9 @@ public class Main {
                 System.out.println("enter rear weight");
                 aircraft.setRearWeight(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.println("wrong data!!! Please enter only numbers for example: 123,45");;
+                System.out.print(ConsoleColors.RED);
+                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+                System.out.print(ConsoleColors.RESET);
             }
         }
         System.out.println("enter weghing method A (front wheel and tail) or B (main wheel and tail) ");
@@ -63,7 +69,9 @@ public class Main {
         try{
             aircraft.setWeighingMethod(bufferedReader.readLine());
         } catch (Exception e) {
+            System.out.print(ConsoleColors.RED);
             System.out.println("wrong data!!! Please enter only letter A or B");
+            System.out.print(ConsoleColors.RESET);
         }
         while(!aircraft.getWeighingMethod().equalsIgnoreCase("a")  && !aircraft.getWeighingMethod().equalsIgnoreCase("b"))
         {
@@ -71,7 +79,9 @@ public class Main {
                 System.out.println("Please enter only A or B");
                 aircraft.setWeighingMethod(bufferedReader.readLine());
             } catch (Exception e) {
+                System.out.print(ConsoleColors.RED);
                 System.out.println("wrong data!!! Please enter only letter A or B");
+                System.out.print(ConsoleColors.RESET);
             }
         }
 
