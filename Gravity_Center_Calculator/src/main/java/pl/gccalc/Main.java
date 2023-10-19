@@ -92,12 +92,6 @@ public class Main {
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))- aircraft.getALength()));
 
         }
-        ;
-
-
-
-
-
 
         System.out.println(aircraft.toString());
 
