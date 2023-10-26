@@ -23,7 +23,7 @@ private Double gravityCentre ;
                 ", rearWeight=" + rearWeight +
                 ", aLength=" + aLength +
                 ", lLength=" + lLength +
-                ", weighingMethod='" + weighingMethod + '\'' +
+                 "\n" +
                 ", gravityCentre=" + gravityCentre +
                 '}';
     }

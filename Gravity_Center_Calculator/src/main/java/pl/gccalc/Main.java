@@ -8,7 +8,7 @@ public class Main {
     static Aircraft aircraft = new Aircraft();
     public static void main(String[] args) {
         System.out.print(ConsoleColors.BLUE);
-        System.out.println("Welcome in calculator please enter correct values:" );
+        System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Mantenance Manual of Your glider to see weiging procedure." );
         System.out.print(ConsoleColors.RESET);
 
 
@@ -91,8 +91,9 @@ public class Main {
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))- aircraft.getALength()));
 
         }
-
+        System.out.print(ConsoleColors.YELLOW_BOLD_BRIGHT);
         System.out.println(aircraft.toString());
+        System.out.print(ConsoleColors.RESET);
 
 
 
