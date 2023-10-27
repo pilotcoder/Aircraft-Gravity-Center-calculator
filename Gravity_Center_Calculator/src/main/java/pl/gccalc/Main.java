@@ -13,9 +13,6 @@ public class Main {
 
 
 
-
-
-
         while(aircraft.getLLength() == null)
         {
             try{
