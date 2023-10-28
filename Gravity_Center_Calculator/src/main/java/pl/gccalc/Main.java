@@ -11,8 +11,6 @@ public class Main {
         System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Mantenance Manual of Your glider to see weiging procedure." );
         System.out.print(ConsoleColors.RESET);
 
-
-
         while(aircraft.getLLength() == null)
         {
             try{
