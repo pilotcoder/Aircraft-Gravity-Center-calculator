@@ -24,7 +24,9 @@ private Double gravityCentre ;
                 ", aLength=" + aLength +
                 ", lLength=" + lLength +
                  "\n" +
-                ", gravityCentre=" + gravityCentre +
+                ", Center of gravity pisition: =" + gravityCentre +
+                "\n" +
+                "Please check range of G.C. in Maintenance manual of your glider" +
                 '}';
     }
 }
