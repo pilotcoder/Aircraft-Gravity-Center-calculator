@@ -89,7 +89,6 @@ public class Main {
         System.out.print(ConsoleColors.YELLOW_BOLD_BRIGHT);
         System.out.println(aircraft.toString());
         System.out.print(ConsoleColors.RESET);
-
     }
 
 
