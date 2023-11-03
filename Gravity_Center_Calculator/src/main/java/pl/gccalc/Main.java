@@ -22,7 +22,6 @@ public class Main {
                 System.out.print(ConsoleColors.RESET);
             }
         }
-
         while(aircraft.getALength() == null)
         {
             try{
