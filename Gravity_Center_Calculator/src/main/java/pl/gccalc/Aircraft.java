@@ -26,7 +26,7 @@ private Double gravityCentre ;
                  "\n" +
                 ", Center of gravity pisition: =" + gravityCentre +
                 "\n" +
-                "Please check range of G.C. in Maintenance manual of your glider" +
+                "Please check range of G.C. in Maintenance manual of your glider." +
                 '}';
     }
 }
