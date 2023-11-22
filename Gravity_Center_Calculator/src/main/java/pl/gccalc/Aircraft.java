@@ -15,7 +15,6 @@ private Double lLength ;
 private String weighingMethod ;
 private Double gravityCentre ;
 
-
     @Override
     public String toString() {
         return "Aircraft{" +
