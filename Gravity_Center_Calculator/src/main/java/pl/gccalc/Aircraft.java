@@ -23,7 +23,7 @@ private Double gravityCentre ;
                 ", aLength=" + aLength +
                 ", lLength=" + lLength +
                  "\n" +
-                ", Center of gravity pisition: =" + gravityCentre +
+                ", Center of gravity position: =" + gravityCentre +
                 "\n" +
                 "Please check range of G.C. in Maintenance manual of your glider." +
                 '}';
