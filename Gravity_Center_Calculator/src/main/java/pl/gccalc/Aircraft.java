@@ -17,7 +17,7 @@ private Double gravityCentre ;
 
     @Override
     public String toString() {
-        return "Aircraft{" +
+        return "Aircraft: " +
                 "frontWeight=" + frontWeight +
                 ", rearWeight=" + rearWeight +
                 ", aLength=" + aLength +
@@ -25,7 +25,6 @@ private Double gravityCentre ;
                  "\n" +
                 ", Center of gravity position: = " + gravityCentre +
                 "\n" +
-                "Please check range of G.C. in Maintenance manual of your glider." +
-                '}';
+                "Please check range of G.C. in Maintenance manual of your glider." ;
     }
 }
