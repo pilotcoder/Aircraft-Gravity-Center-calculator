@@ -77,7 +77,6 @@ public class Main {
                 System.out.print(ConsoleColors.RESET);
             }
         }
-
         if ("a".equalsIgnoreCase(aircraft.getWeighingMethod())){
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))+ aircraft.getALength()));
 
