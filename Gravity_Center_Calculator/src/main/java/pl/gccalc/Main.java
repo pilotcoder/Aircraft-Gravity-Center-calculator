@@ -73,7 +73,7 @@ public class Main {
                 aircraft.setWeighingMethod(bufferedReader.readLine());
             } catch (Exception e) {
                 System.out.print(ConsoleColors.RED);
-                System.out.println("wrong data!!! Please enter only letter A or B");
+                System.out.println("Wrong data!!! Please enter only letter A or B");
                 System.out.print(ConsoleColors.RESET);
             }
         }
