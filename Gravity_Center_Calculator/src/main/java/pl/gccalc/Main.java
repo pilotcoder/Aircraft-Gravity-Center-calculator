@@ -87,7 +87,4 @@ public class Main {
         System.out.println(aircraft.toString());
         System.out.print(ConsoleColors.RESET);
     }
-
-
-
 }
