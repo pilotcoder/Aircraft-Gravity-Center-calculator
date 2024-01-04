@@ -41,7 +41,7 @@ public class Main {
                 aircraft.setFrontWeight(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
                 System.out.print(ConsoleColors.RED);
-                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+                System.out.println("Wrong data!!! Please enter only numbers for example: 123.45");
                 System.out.print(ConsoleColors.RESET);
             }
         }
