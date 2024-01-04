@@ -57,7 +57,7 @@ public class Main {
                 System.out.print(ConsoleColors.RESET);
             }
         }
-        System.out.println("enter weghing method A (front wheel and tail) or B (main wheel and tail) ");
+        System.out.println("enter weghing method A (Front wheel and tail) or B (Main wheel and tail) ");
 
         try{
             aircraft.setWeighingMethod(bufferedReader.readLine());
