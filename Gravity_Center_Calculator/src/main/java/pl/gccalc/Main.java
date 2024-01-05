@@ -37,7 +37,7 @@ public class Main {
         while(aircraft.getFrontWeight() == null)
         {
             try{
-                System.out.println("enter front weight");
+                System.out.println("Enter front weight");
                 aircraft.setFrontWeight(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
                 System.out.print(ConsoleColors.RED);
