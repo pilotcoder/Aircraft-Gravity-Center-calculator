@@ -8,7 +8,7 @@ public class Main {
     static Aircraft aircraft = new Aircraft();
     public static void main(String[] args) {
         System.out.print(ConsoleColors.BLUE);
-        System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Maintenance Manual of Your glider to see weiging procedure." );
+        System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Maintenance Manual of Your glider to see weighing procedure." );
         System.out.print(ConsoleColors.RESET);
 //
         while(aircraft.getLLength() == null)
