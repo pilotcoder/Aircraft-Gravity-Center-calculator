@@ -1,12 +1,21 @@
 package pl.gccalc;
 
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
+
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStreamReader;
+
+import static pl.gccalc.PdfCreator.createPdf;
 
 public class Main {
     static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     static Aircraft aircraft = new Aircraft();
-    public static void main(String[] args) {
+    public static void main(String[] args) throws DocumentException, FileNotFoundException {
         System.out.print(ConsoleColors.BLUE);
         System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Maintenance Manual of Your glider to see weighing procedure." );
         System.out.print(ConsoleColors.RESET);
@@ -83,11 +92,17 @@ public class Main {
         } else if ("b".equalsIgnoreCase(aircraft.getWeighingMethod())) {
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))- aircraft.getALength()));
         }
+        createPdf();
+
+
+
+
 
         System.out.print(ConsoleColors.YELLOW_BOLD_BRIGHT);
         System.out.println(aircraft.toString());
         System.out.print(ConsoleColors.RESET);
     }
+
 
 
 }
