@@ -12,9 +12,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 public class PdfCreator {
-    public static void createPdf() throws FileNotFoundException, DocumentException {
+    public static void createPdf(Aircraft aircraft) throws FileNotFoundException, DocumentException {
 
-        String filename = "velvet.pdf";
+        String filename = "Weighing-sheet.pdf";
         Document document = new Document();
 
         PdfWriter.getInstance(document, new FileOutputStream(filename));
@@ -22,7 +22,7 @@ public class PdfCreator {
 
         document.open();
 
-        Paragraph paragraph = new  Paragraph("testowanie pdfa2");
+        Paragraph paragraph = new  Paragraph(aircraft.toString());
         document.add(paragraph);
 
 //        PdfPTable table  = new PdfPTable(4);

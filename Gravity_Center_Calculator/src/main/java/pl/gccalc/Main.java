@@ -92,7 +92,7 @@ public class Main {
         } else if ("b".equalsIgnoreCase(aircraft.getWeighingMethod())) {
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))- aircraft.getALength()));
         }
-        createPdf();
+        createPdf(aircraft);
 
 
 
