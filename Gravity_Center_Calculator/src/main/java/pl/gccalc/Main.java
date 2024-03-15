@@ -1,15 +1,10 @@
 package pl.gccalc;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfWriter;
 
+import com.itextpdf.text.DocumentException;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.InputStreamReader;
-
 import static pl.gccalc.PdfCreator.createPdf;
 
 public class Main {
