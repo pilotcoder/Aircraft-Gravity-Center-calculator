@@ -15,6 +15,40 @@ public class Main {
         System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Maintenance Manual of Your glider to see weighing procedure." );
         System.out.print(ConsoleColors.RESET);
 
+        while(aircraft.getLeftWingWeight() == null)
+        {
+            try{
+                System.out.println("enter left wing weight:");
+                aircraft.setLeftWingWeight(Double.parseDouble(bufferedReader.readLine()));
+            } catch (Exception e) {
+                System.out.print(ConsoleColors.RED);
+                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+                System.out.print(ConsoleColors.RESET);
+            }
+        }
+        while(aircraft.getRightWingWeight() == null)
+        {
+            try{
+                System.out.println("enter right wing weight:");
+                aircraft.setRightWingWeight(Double.parseDouble(bufferedReader.readLine()));
+            } catch (Exception e) {
+                System.out.print(ConsoleColors.RED);
+                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+                System.out.print(ConsoleColors.RESET);
+            }
+        }
+        while(aircraft.getTailplaneWeight() == null)
+        {
+            try{
+                System.out.println("enter tailplane weight:");
+                aircraft.setTailplaneWeight(Double.parseDouble(bufferedReader.readLine()));
+            } catch (Exception e) {
+                System.out.print(ConsoleColors.RED);
+                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+                System.out.print(ConsoleColors.RESET);
+            }
+        }
+
         while(aircraft.getLLength() == null)
         {
             try{
@@ -70,6 +104,9 @@ public class Main {
             System.out.println("wrong data!!! Please enter only letter A or B");
             System.out.print(ConsoleColors.RESET);
         }
+        aircraft.setTotalWeight(aircraft.getFrontWeight(), aircraft.getRearWeight());
+        aircraft.setFuselageWeight(aircraft.getTotalWeight(), aircraft.getLeftWingWeight(), aircraft.getRightWingWeight(), aircraft.getTailplaneWeight());
+
         while(!aircraft.getWeighingMethod().equalsIgnoreCase("a")  && !aircraft.getWeighingMethod().equalsIgnoreCase("b"))
         {
             try{
