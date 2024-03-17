@@ -21,9 +21,10 @@ public class Main {
                 System.out.println("enter left wing weight:");
                 aircraft.setLeftWingWeight(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.print(ConsoleColors.RED);
-                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
-                System.out.print(ConsoleColors.RESET);
+//                System.out.print(ConsoleColors.RED);
+//                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+//                System.out.print(ConsoleColors.RESET);
+                wrongDataException();
             }
         }
         while(aircraft.getRightWingWeight() == null)
@@ -132,6 +133,11 @@ public class Main {
 
         System.out.print(ConsoleColors.YELLOW_BOLD_BRIGHT);
         System.out.println(aircraft.toString());
+        System.out.print(ConsoleColors.RESET);
+    }
+    public static void wrongDataException (){
+        System.out.print(ConsoleColors.RED);
+        System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
         System.out.print(ConsoleColors.RESET);
     }
 
