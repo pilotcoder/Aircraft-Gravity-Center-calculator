@@ -1,12 +1,7 @@
 package pl.gccalc;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.*;
+import com.itextpdf.text.pdf.*;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -24,13 +19,36 @@ public class PdfCreator {
 
         Paragraph paragraph = new  Paragraph(aircraft.toString());
         document.add(paragraph);
+        Paragraph paragraph1 = new Paragraph("--------");
+        document.add(paragraph1);
+        Chunk chunk = new Chunk("chunk");
+        document.add(chunk);
+        document.add(chunk);
+        document.add(paragraph1);
+        document.add(paragraph1);
+        paragraph1.add("aa");
+        document.add(paragraph1);
+        document.add(chunk);
+        paragraph1 = new Paragraph();
+        document.add(paragraph1);
+        document.add(chunk);
 
-//        PdfPTable table  = new PdfPTable(4);
+
+
+
+
+
+
+
+
+
+
+//        PdfPTable table  = new PdfPTable(1);
 //
 //
 //
 //
-//        PdfPCell header = new PdfPCell(new Phrase("Data lotu:"));
+//        PdfPCell header = new PdfPCell(new Phrase("Weighing Protocol"));
 //        table.addCell(header);
 //        header = new PdfPCell(new Phrase("Czas lotu godz:"));
 //        table.addCell(header);
