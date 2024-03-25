@@ -15,7 +15,6 @@ public class Main {
         createPdf(aircraft);
 
 
-
         System.out.print(ConsoleColors.BLUE);
         System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Maintenance Manual of Your glider to see weighing procedure." );
         System.out.print(ConsoleColors.RESET);
