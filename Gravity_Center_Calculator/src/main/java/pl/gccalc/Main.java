@@ -48,9 +48,10 @@ public class Main {
                 System.out.println("enter tailplane weight:");
                 aircraft.setTailplaneWeight(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.print(ConsoleColors.RED);
-                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
-                System.out.print(ConsoleColors.RESET);
+//                System.out.print(ConsoleColors.RED);
+//                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+//                System.out.print(ConsoleColors.RESET);
+                wrongDataException();
             }
         }
 
@@ -60,9 +61,10 @@ public class Main {
                 System.out.println("enter l lenght:");
                 aircraft.setLLength(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.print(ConsoleColors.RED);
-                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
-                System.out.print(ConsoleColors.RESET);
+//                System.out.print(ConsoleColors.RED);
+//                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+//                System.out.print(ConsoleColors.RESET);
+                wrongDataException();
             }
         }
         while(aircraft.getALength() == null)
@@ -71,9 +73,10 @@ public class Main {
                 System.out.println("enter a lenght");
                 aircraft.setALength(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.print(ConsoleColors.RED);
-                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
-                System.out.print(ConsoleColors.RESET);
+//                System.out.print(ConsoleColors.RED);
+//                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+//                System.out.print(ConsoleColors.RESET);
+                wrongDataException();
             }
         }
 
@@ -83,9 +86,10 @@ public class Main {
                 System.out.println("Enter front weight");
                 aircraft.setFrontWeight(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.print(ConsoleColors.RED);
-                System.out.println("Wrong data!!! Please enter only numbers for example: 123.45");
-                System.out.print(ConsoleColors.RESET);
+//                System.out.print(ConsoleColors.RED);
+//                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+//                System.out.print(ConsoleColors.RESET);
+                wrongDataException();
             }
         }
 
@@ -95,9 +99,10 @@ public class Main {
                 System.out.println("enter rear weight");
                 aircraft.setRearWeight(Double.parseDouble(bufferedReader.readLine()));
             } catch (Exception e) {
-                System.out.print(ConsoleColors.RED);
-                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
-                System.out.print(ConsoleColors.RESET);
+//                System.out.print(ConsoleColors.RED);
+//                System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
+//                System.out.print(ConsoleColors.RESET);
+                wrongDataException();
             }
         }
         System.out.println("enter weighing method A (Main wheel and tail) or B (front wheel and tail) ");
