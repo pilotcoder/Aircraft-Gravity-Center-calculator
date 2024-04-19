@@ -136,10 +136,6 @@ public class Main {
         }
         createPdf(aircraft);
 
-
-
-
-
         System.out.print(ConsoleColors.YELLOW_BOLD_BRIGHT);
         System.out.println(aircraft.toString());
         System.out.print(ConsoleColors.RESET);
