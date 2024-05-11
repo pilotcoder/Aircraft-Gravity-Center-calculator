@@ -87,11 +87,6 @@ public class PdfCreator {
         document.add(paragraph);
         document.add(table3);
 
-
-
-
-
-
         document.close();
 
         System.out.println("koniec");
