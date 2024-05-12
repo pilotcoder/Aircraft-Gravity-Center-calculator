@@ -14,7 +14,6 @@ public class PdfCreator {
 
         PdfWriter.getInstance(document, new FileOutputStream(filename));
 
-
         document.open();
 
         Paragraph paragraph = new  Paragraph("\n");
