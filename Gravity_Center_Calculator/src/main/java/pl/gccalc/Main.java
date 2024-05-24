@@ -12,7 +12,7 @@ public class Main {
     static Aircraft aircraft = new Aircraft();
 
     public static void main(String[] args) throws DocumentException, FileNotFoundException {
-
+        createPdf(aircraft);
 
         System.out.print(ConsoleColors.BLUE);
         System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Maintenance Manual of Your glider to see weighing procedure." );
@@ -119,11 +119,12 @@ public class Main {
         System.out.println(aircraft.toString());
         System.out.print(ConsoleColors.RESET);
     }
-    public static void wrongDataException () {
+    public static void wrongDataException (){
         System.out.print(ConsoleColors.RED);
         System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
         System.out.print(ConsoleColors.RESET);
     }
+
 
 
 }
