@@ -36,29 +36,29 @@ public class PdfCreator {
 
         PdfPTable table  = new PdfPTable(2);
         table.addCell("Left Wing kg:");
-        table.addCell("aircraft.getLeftWingWeight().toString()");
+        table.addCell(aircraft.getLeftWingWeight().toString());
         table.addCell("Right Wing kg:");
-        table.addCell("4");
+        table.addCell(aircraft.getRightWingWeight().toString());
         table.addCell("Tailplane kg:");
-        table.addCell("6");
+        table.addCell(aircraft.getTailplaneWeight().toString());
         table.addCell("Fuselage kg.");
-        table.addCell("6");
+        table.addCell(aircraft.getFuselageWeight().toString());
         table.addCell("Total Weight kg:");
-        table.addCell("6");
+        table.addCell(aircraft.getTotalWeight().toString());
 
         PdfPTable table2  = new PdfPTable(2);
         table2.addCell("L length ");
-        table2.addCell("L length ");
+        table2.addCell(aircraft.getLLength().toString());
         table2.addCell("A length ");
-        table2.addCell("A length ");
+        table2.addCell(aircraft.getALength().toString());
         table2.addCell("Front Weight kg: ");
-        table2.addCell("front");
+        table2.addCell(aircraft.getFrontWeight().toString());
         table2.addCell("Rear Weight kg: ");
-        table2.addCell("rear");
+        table2.addCell(aircraft.getRearWeight().toString());
         document.add(paragraph);
         PdfPTable table3  = new PdfPTable(2);
         table3.addCell("Gravity center position cm:");
-        table3.addCell("33");
+        table3.addCell(aircraft.getGravityCentre().toString());
 
 
 
