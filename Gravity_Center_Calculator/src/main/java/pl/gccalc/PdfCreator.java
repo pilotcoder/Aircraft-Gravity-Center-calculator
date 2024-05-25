@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 public class PdfCreator {
-    public static void createPdf(Aircraft aircraft) throws FileNotFoundException, DocumentException {
+    public  void createPdf(Aircraft aircraft) throws FileNotFoundException, DocumentException {
 
         String filename = "Weighing-sheet.pdf";
         Document document = new Document();
