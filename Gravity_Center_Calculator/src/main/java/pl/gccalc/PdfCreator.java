@@ -61,18 +61,6 @@ public class PdfCreator {
         table3.addCell(aircraft.getGravityCentre().toString());
 
 
-
-
-//        PdfPCell pdfPCell = new PdfPCell(new Phrase("Left Wing kg:"));
-//        table.addCell(pdfPCell);
-//        pdfPCell = new PdfPCell(new Phrase("Right Wing kg:"));
-//        table.addCell(pdfPCell);
-//        pdfPCell = new PdfPCell(new Phrase("Tailplane kg:"));
-//        table.addCell(pdfPCell);
-//
-//        pdfPCell = new PdfPCell(new Phrase("Fuselage:"));
-//        table.addCell(pdfPCell);
-
         table.addCell("1");
         table.addCell("2");
         table.addCell("3");
