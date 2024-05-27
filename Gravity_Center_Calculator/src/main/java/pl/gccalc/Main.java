@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) throws DocumentException, FileNotFoundException {
 //        createPdf(aircraft);
-
+90
         System.out.print(ConsoleColors.BLUE);
         System.out.println("Welcome in calculator please enter correct values:" +  "USE DOT '.' AS DECIMAL"  + "\n" + "Read Maintenance Manual of Your glider to see weighing procedure." );
         System.out.print(ConsoleColors.RESET);
