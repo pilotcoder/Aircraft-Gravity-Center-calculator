@@ -5,7 +5,7 @@ import com.itextpdf.text.DocumentException;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
-import static pl.gccalc.PdfCreator.createPdf;
+//import static pl.gccalc.PdfCreator.createPdf;
 
 public class Main {
     static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -113,7 +113,8 @@ public class Main {
         } else if ("b".equalsIgnoreCase(aircraft.getWeighingMethod())) {
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))- aircraft.getALength()));
         }
-        createPdf(aircraft);
+        PdfCreator pdfCreator = new PdfCreator();
+        pdfCreator.createPdf(aircraft);
 
         System.out.print(ConsoleColors.YELLOW_BOLD_BRIGHT);
         System.out.println(aircraft.toString());
