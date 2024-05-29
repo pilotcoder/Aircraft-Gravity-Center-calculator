@@ -58,7 +58,7 @@ public class PdfCreator {
         document.add(paragraph);
         PdfPTable table3  = new PdfPTable(2);
         table3.addCell("Gravity center position cm:");
-        table3.addCell(aircraft.getGravityCentreRound().toString());
+        table3.addCell(aircraft.getGravityCentre().toString());
 
 
 //        table.addCell("1");

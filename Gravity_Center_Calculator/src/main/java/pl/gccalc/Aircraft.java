@@ -50,7 +50,8 @@ public class Aircraft {
     }
 
     public void setGravityCentre(Double gravityCentre) {
-
-        this.gravityCentre = gravityCentre;
+        int multi = (int) Math.pow(10, 3);
+        int temp = (int) Math.round(gravityCentre * multi);
+        this.gravityCentre = (double) temp / multi;
     }
 }

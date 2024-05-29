@@ -111,11 +111,11 @@ public class Main {
         }
         if ("a".equalsIgnoreCase(aircraft.getWeighingMethod())){
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))+ aircraft.getALength()));
-            aircraft.setGravityCentreRound(roundToDecimal(aircraft.getGravityCentre()));
+//            aircraft.setGravityCentreRound(roundToDecimal(aircraft.getGravityCentre()));
 
         } else if ("b".equalsIgnoreCase(aircraft.getWeighingMethod())) {
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))- aircraft.getALength()));
-            aircraft.setGravityCentreRound(roundToDecimal(aircraft.getGravityCentre()));
+//            aircraft.setGravityCentreRound(roundToDecimal(aircraft.getGravityCentre()));
         }
 //        PdfCreator pdfCreator = new PdfCreator();
 //        pdfCreator.createPdf(aircraft);
@@ -132,11 +132,11 @@ public class Main {
         System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
         System.out.print(ConsoleColors.RESET);
     }
-    public static double roundToDecimal(double num) {
-        int multi = (int) Math.pow(10, 3);
-        int temp = (int) Math.round(num * multi);
-        return (double) temp / multi;
-    }
+//    public static double roundToDecimal(double num) {
+//        int multi = (int) Math.pow(10, 3);
+//        int temp = (int) Math.round(num * multi);
+//        return (double) temp / multi;
+//    }
 
 
 
