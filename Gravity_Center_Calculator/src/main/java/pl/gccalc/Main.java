@@ -5,6 +5,8 @@ import com.itextpdf.text.DocumentException;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
+
+import static pl.gccalc.PdfCreator.createPdf;
 //import static pl.gccalc.PdfCreator.createPdf;
 
 public class Main {
@@ -109,12 +111,17 @@ public class Main {
         }
         if ("a".equalsIgnoreCase(aircraft.getWeighingMethod())){
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))+ aircraft.getALength()));
+            aircraft.setGravityCentreRound(roundToDecimal(aircraft.getGravityCentre()));
 
         } else if ("b".equalsIgnoreCase(aircraft.getWeighingMethod())) {
             aircraft.setGravityCentre((((aircraft.getLLength() * aircraft.getRearWeight())/(aircraft.getFrontWeight()+ aircraft.getRearWeight()))- aircraft.getALength()));
+            aircraft.setGravityCentreRound(roundToDecimal(aircraft.getGravityCentre()));
         }
-        PdfCreator pdfCreator = new PdfCreator();
-        pdfCreator.createPdf(aircraft);
+//        PdfCreator pdfCreator = new PdfCreator();
+//        pdfCreator.createPdf(aircraft);
+        createPdf(aircraft);
+
+
 
         System.out.print(ConsoleColors.YELLOW_BOLD_BRIGHT);
         System.out.println(aircraft.toString());
@@ -124,6 +131,11 @@ public class Main {
         System.out.print(ConsoleColors.RED);
         System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
         System.out.print(ConsoleColors.RESET);
+    }
+    public static double roundToDecimal(double num) {
+        int multi = (int) Math.pow(10, 3);
+        int temp = (int) Math.round(num * multi);
+        return (double) temp / multi;
     }
 
 

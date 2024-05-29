@@ -22,13 +22,14 @@ public class Aircraft {
     private Double lLength;
     private String weighingMethod;
     private Double gravityCentre;
+    private Double gravityCentreRound;
 
     public void setTotalWeight(Double frontWeight, Double rearWeight) {
         this.totalWeight = frontWeight + rearWeight;
     }
 
     public void setFuselageWeight(Double totalWeight, Double leftWingWeight, Double rightWingWeight, Double tailplaneWeight) {
-        this.fuselageWeight = totalWeight - leftWingWeight  - rightWingWeight - tailplaneWeight;
+        this.fuselageWeight = totalWeight - leftWingWeight - rightWingWeight - tailplaneWeight;
     }
 
     @Override
@@ -44,6 +45,12 @@ public class Aircraft {
                 ", aLength=" + aLength +
                 ", lLength=" + lLength +
                 ", gravityCentre=" + gravityCentre +
+                ", gravityCentreRound=" + gravityCentreRound +
                 '}';
+    }
+
+    public void setGravityCentre(Double gravityCentre) {
+
+        this.gravityCentre = gravityCentre;
     }
 }

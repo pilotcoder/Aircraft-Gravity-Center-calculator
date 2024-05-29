@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 public class PdfCreator {
-    public  void createPdf(Aircraft aircraft) throws FileNotFoundException, DocumentException {
+    public static void createPdf(Aircraft aircraft) throws FileNotFoundException, DocumentException {
 
         String filename = "Weighing-sheet.pdf";
         Document document = new Document();
@@ -58,15 +58,15 @@ public class PdfCreator {
         document.add(paragraph);
         PdfPTable table3  = new PdfPTable(2);
         table3.addCell("Gravity center position cm:");
-        table3.addCell(aircraft.getGravityCentre().toString());
+        table3.addCell(aircraft.getGravityCentreRound().toString());
 
 
-        table.addCell("1");
-        table.addCell("2");
-        table.addCell("3");
-        table.addCell("4");
-        table.addCell("5");
-        table.addCell("6");
+//        table.addCell("1");
+//        table.addCell("2");
+//        table.addCell("3");
+//        table.addCell("4");
+//        table.addCell("5");
+//        table.addCell("6");
 
 
         document.add(table);
