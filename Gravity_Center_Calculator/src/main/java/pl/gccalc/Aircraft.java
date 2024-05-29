@@ -22,7 +22,7 @@ public class Aircraft {
     private Double lLength;
     private String weighingMethod;
     private Double gravityCentre;
-    private Double gravityCentreRound;
+
 
     public void setTotalWeight(Double frontWeight, Double rearWeight) {
         this.totalWeight = frontWeight + rearWeight;
@@ -31,7 +31,11 @@ public class Aircraft {
     public void setFuselageWeight(Double totalWeight, Double leftWingWeight, Double rightWingWeight, Double tailplaneWeight) {
         this.fuselageWeight = totalWeight - leftWingWeight - rightWingWeight - tailplaneWeight;
     }
-
+    public void setGravityCentre(Double gravityCentre) {
+        int multi = (int) Math.pow(10, 3);
+        int temp = (int) Math.round(gravityCentre * multi);
+        this.gravityCentre = (double) temp / multi;
+    }
     @Override
     public String toString() {
         return "Aircraft{" +
@@ -45,13 +49,8 @@ public class Aircraft {
                 ", aLength=" + aLength +
                 ", lLength=" + lLength +
                 ", gravityCentre=" + gravityCentre +
-                ", gravityCentreRound=" + gravityCentreRound +
                 '}';
     }
 
-    public void setGravityCentre(Double gravityCentre) {
-        int multi = (int) Math.pow(10, 3);
-        int temp = (int) Math.round(gravityCentre * multi);
-        this.gravityCentre = (double) temp / multi;
-    }
+
 }
