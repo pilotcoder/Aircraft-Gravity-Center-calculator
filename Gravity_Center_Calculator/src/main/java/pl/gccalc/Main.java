@@ -132,12 +132,6 @@ public class Main {
         System.out.println("wrong data!!! Please enter only numbers for example: 123.45");
         System.out.print(ConsoleColors.RESET);
     }
-//    public static double roundToDecimal(double num) {
-//        int multi = (int) Math.pow(10, 3);
-//        int temp = (int) Math.round(num * multi);
-//        return (double) temp / multi;
-//    }
-
 
 
 }
