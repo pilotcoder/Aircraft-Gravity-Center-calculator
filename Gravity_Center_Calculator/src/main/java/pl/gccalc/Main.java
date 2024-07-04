@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import static pl.gccalc.PdfCreator.createPdf;
 //import static pl.gccalc.PdfCreator.createPdf;
 
+
 public class Main {
     static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     static Aircraft aircraft = new Aircraft();
