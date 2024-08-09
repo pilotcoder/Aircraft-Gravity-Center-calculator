@@ -22,18 +22,7 @@ public class PdfCreator {
         Paragraph paragraph1 = new Paragraph("WEIGHING PROTOCOL");
         document.add(paragraph1);
         document.add(paragraph);
-
-
-
-
-
-
-
-
-
-
-
-
+//------------
         PdfPTable table  = new PdfPTable(2);
         table.addCell("Left Wing kg:");
         table.addCell(aircraft.getLeftWingWeight().toString());
