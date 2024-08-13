@@ -49,7 +49,7 @@ public class PdfCreator {
         table3.addCell("Gravity center position cm:");
         table3.addCell(aircraft.getGravityCentre().toString());
 
-
+///--------
 //        table.addCell("1");
 //        table.addCell("2");
 //        table.addCell("3");
