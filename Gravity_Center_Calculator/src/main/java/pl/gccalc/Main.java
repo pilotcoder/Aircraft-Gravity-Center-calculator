@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 
 import static pl.gccalc.PdfCreator.createPdf;
-//import static pl.gccalc.PdfCreator.createPdf;
+//import static pl.gccalc.PdfCreator.createPdf; import statyczny
 
 
 public class Main {
